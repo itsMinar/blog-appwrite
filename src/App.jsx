@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { Outlet } from 'react-router-dom';
 import authService from './appwrite/auth';
 import { Footer, Header } from './components';
 import { login, logout } from './store/authSlice';
@@ -25,7 +26,9 @@ function App() {
     <div className="flex min-h-screen flex-wrap content-between bg-gray-400">
       <div className="block w-full">
         <Header />
-        <main>emni</main>
+        <main>
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </div>
