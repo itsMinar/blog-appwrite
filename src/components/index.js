@@ -1,3 +1,4 @@
+import Protected from './AuthLayout';
 import Button from './Button';
 import Input from './Input';
 import Login from './Login';
@@ -17,5 +18,6 @@ export {
   Login,
   Logo,
   PostCard,
+  Protected,
   Select,
 };
